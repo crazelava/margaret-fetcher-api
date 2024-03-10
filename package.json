@@ -1,0 +1,38 @@
+{
+  "name": "margaret-fetcher-api",
+  "description": "Request classes for fetch",
+  "main": "dist/index.js",
+  "jsnext:main": "src/index.js",
+  "typings": "./index.d.ts",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/crazelava/margaret-fetcher-api.git"
+  },
+  "keywords": [
+    "fetch"
+  ],
+  "author": {
+    "name": "crazelava",
+    "email": "crazelava@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "fetch-everywhere": "^1.0.5",
+    "lodash": "^4.15.0",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.3.0",
+    "eslint-config-madewithlove": "^5.1.1",
+    "fetch-mock": "^4.6.1",
+    "jest": "^20.0.4",
+    "madewithlove-webpack-config": "^6.2.3",
+    "webpack": "^3.4.1"
+  },
+  "scripts": {
+    "postversion": "git push; git push --tags; npm publish",
+    "lint": "eslint src",
+    "test": "jest"
+  }
+}
